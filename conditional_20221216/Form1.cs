@@ -18,16 +18,25 @@ namespace conditional_20221216
             var math = int.Parse(tbMath.Text);
             var total = kuk + eng + math;
             lblAvg.Text = (total / 3).ToString();
-            if (total / 3 >= 90)
-                lblResult.Text = "A학점";
-            else if (total / 3 >= 80)
-                lblResult.Text = "B학점";
-            else if (total / 3 >= 70)
-                lblResult.Text = "C학점";
-            else if (total / 3 >= 60)
-                lblResult.Text = "D학점";
-            else
-                lblResult.Text = "F학점";
+            switch (total / 30)
+            {
+                case 10:
+                case 9:
+                    lblResult.Text = "A학점";
+                    break;
+                case 8:
+                    lblResult.Text = "B학점";
+                    break;
+                case 7:
+                    lblResult.Text = "C학점";
+                    break;
+                case 6:
+                    lblResult.Text = "D학점";
+                    break;
+                default:
+                    lblResult.Text = "F학점";
+                    break;
+            }
         }
 
         private void tbKuk_Enter(object sender, EventArgs e)
