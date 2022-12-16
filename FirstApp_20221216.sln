@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arithmetic_20221216", "Arit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "conditional_20221216", "conditional_20221216\conditional_20221216.csproj", "{79F7C484-CC92-417B-8275-EBDD12F39B83}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "loop_20221216", "loop_20221216\loop_20221216.csproj", "{DA703F53-34A4-4D55-A9DD-35A36974DA24}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{79F7C484-CC92-417B-8275-EBDD12F39B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79F7C484-CC92-417B-8275-EBDD12F39B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79F7C484-CC92-417B-8275-EBDD12F39B83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA703F53-34A4-4D55-A9DD-35A36974DA24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA703F53-34A4-4D55-A9DD-35A36974DA24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA703F53-34A4-4D55-A9DD-35A36974DA24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA703F53-34A4-4D55-A9DD-35A36974DA24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
