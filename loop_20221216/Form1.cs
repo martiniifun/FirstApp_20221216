@@ -12,12 +12,12 @@ namespace loop_20221216
 
         private void btnResult_Click(object sender, EventArgs e)
         {
-            var i = 0;
-            while (i < 5)
+            int i = 0;
+            do
             {
                 lblResult.Text += "Programming\n";
                 i++;
-            }
+            } while (i < 5);
         }
     }
 }
