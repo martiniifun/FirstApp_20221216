@@ -2,38 +2,34 @@
 
 namespace FirstClass_20221217
 {
-    public class Zerg
+    public class Dog
     {
-        public void Overload(int zerggling)
+        public virtual void Bark()
         {
-            Console.WriteLine($"저글링 {zerggling}마리");
-        }
-
-        public void Overload(int zerggling, int hydra)
-        {
-            Console.WriteLine($"저글링 {zerggling}마리 + 히드라 {hydra}마리");
-        }
-
-        public void Overload(int zerggling, int hydra, int lurker)
-        {
-            Console.WriteLine($"저글링 {zerggling}마리 + 히드라 {hydra}마리 + 럴커 {lurker}마리");
-        }
-
-        public void Overload(char zerggling)
-        {
-            Console.WriteLine($"Zerggling {zerggling} 등급");
+            Console.WriteLine("멍멍");
         }
     }
 
-    class Program
+    public class Pudle : Dog
     {
-        static void Main(string[] args)
+        public override void Bark()
         {
-            Zerg zerg = new Zerg();
-            zerg.Overload(10);
-            zerg.Overload(10, 20);
-            zerg.Overload(10, 20, 30);
-            zerg.Overload('A');
+            Console.WriteLine("왈왈");
+        }
+    }
+
+    internal static class Program
+    {
+        static void Main()
+        {
+            Pudle pd = new Pudle();
+            pd.Bark();
+
+            Dog dog = new Dog();
+            dog.Bark();
+
+            dog = new Pudle();
+            dog.Bark();
         }
     }
 }
