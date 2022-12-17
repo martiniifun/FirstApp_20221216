@@ -8,7 +8,7 @@
         }
     }
 
-    class Dog
+    partial class Dog
     {
         public Dog()
         {
@@ -19,7 +19,10 @@
         }
 
         private int eyes, nose, mouth, ears;
+    }
 
+    partial class Dog
+    {
         public void Bark()
         {
         }
