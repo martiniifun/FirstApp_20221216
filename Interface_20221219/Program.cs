@@ -39,50 +39,61 @@ using System;
 
 namespace Interface_20221219
 {
-    public interface IUnit
+    public interface ICamera
     {
-        void Attack();
-        void Move();
+        void Picture();
+        void Video();
     }
 
-    public class Zergling : IUnit
+    public interface ICallPhone
     {
-        public void Attack()
-        {
-            Console.WriteLine("저글링 : 공격한다.");
-        }
-
-        public void Move()
-        {
-            Console.WriteLine("저글링 : 이동한다.");
-        }
+        void Call();
+        void Receive();
     }
 
-    public class Dragoon : IUnit
+    public interface INetwork
     {
-        public void Attack()
+        void Wifi();
+    }
+
+    public class SmartPhone : ICallPhone, ICamera, INetwork
+    {
+        public void Call()
         {
-            Console.WriteLine("드라군 : 공격한다.");
+            Console.WriteLine("전화를 건다.");
         }
 
-        public void Move()
+        public void Picture()
         {
-            Console.WriteLine("드라군 : 이동한다.");
+            Console.WriteLine("사진을 찍는다.");
+        }
+
+        public void Receive()
+        {
+            Console.WriteLine("전화를 받는다.");
+        }
+
+        public void Video()
+        {
+            Console.WriteLine("동영상을 촬영한다");
+        }
+
+        public void Wifi()
+        {
+            Console.WriteLine("와이파이에 접속한다");
         }
     }
 
     class Program
     {
-        static void Main()
+        static void Main(string[] args)
         {
-            Dragoon d = new Dragoon();
-            d.Attack();
-            d.Move();
-
-            Zergling z = new Zergling();
-            z.Attack();
-            z.Move();
+            SmartPhone sp = new SmartPhone();
+            sp.Call();
+            sp.Picture();
+            sp.Receive();
+            sp.Video();
+            sp.Wifi();
         }
-        
     }
 }
