@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractClass_20221219", "A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface_20221219", "Interface_20221219\Interface_20221219.csproj", "{22C9B9CF-FD92-4D70-BDAA-4F8D0F602957}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SealedClass_20221219", "SealedClass_20221219\SealedClass_20221219.csproj", "{1488FC62-0A02-4902-A783-F1B242071E2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,5 +62,9 @@ Global
 		{22C9B9CF-FD92-4D70-BDAA-4F8D0F602957}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22C9B9CF-FD92-4D70-BDAA-4F8D0F602957}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22C9B9CF-FD92-4D70-BDAA-4F8D0F602957}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1488FC62-0A02-4902-A783-F1B242071E2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1488FC62-0A02-4902-A783-F1B242071E2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1488FC62-0A02-4902-A783-F1B242071E2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1488FC62-0A02-4902-A783-F1B242071E2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
